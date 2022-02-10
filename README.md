@@ -3,7 +3,7 @@
 
 ## Info
 Due to company security (shorewall) I was not able to fully  test `docker-compose` file. 
-Please check configuration file and setup variables accordingly (see /etl/conf/config.ini).
+Please check configuration file and setup variables accordingly (see `/etl/conf/config.ini`).
 Additionally I added inside docker-compose file `network_mode: host` property to make it works
 no my linux machine.
 Below instructions assumes that there is no security challange when it comes to setup docker-compose.

@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+  etl:
+    container_name: etl
+    build:
+      context: ./etl
+      network: host
+    depends_on:
+      - dwh
+    network_mode: host
+    volumes:
+      - ./data:/usr/app/data
+  dwh:
+    container_name: dwh
+    image: postgres:11-alpine
+    restart: always
+    network_mode: host
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    env_file:
+      - .env
+    volumes:
+      - ./db/init-db.sql:/docker-entrypoint-initdb.d/init.sql
+  pgadmin:
+      container_name: pgadmin-
+      image: dpage/pgadmin4:4.18
+      env_file:
+      - .env
+      network_mode: host
+      restart: always
+      depends_on:
+        - dwh

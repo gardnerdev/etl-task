@@ -29,7 +29,7 @@ To do this,you will also need to set up a table `customer_visits`  in the Data W
 
 -Simple but scalable solution \
 -Detailed documentation/readme with a guide on how to run a solution \
--Bonus points for unit tests and logging \ 
+-Bonus points for unit tests and logging \
 -Bonus points for “pythonic” coding style \
 
 

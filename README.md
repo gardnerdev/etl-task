@@ -7,7 +7,6 @@ https://www.tidio.com/?utm_source=source1&utm_medium=cpc&utm_campaign=999999999&
 Mappings between parts of the URL and the table fields
 
 
-
 | URL part              | Column in table |
 | ----------------------| -----------------------|
 | a_bucket              | ad_bucket              |

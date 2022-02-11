@@ -22,14 +22,14 @@ Mappings between parts of the URL and the table fields
 
 # Task
 
-Your task will be to createa simple ETL solution that parses the URL and puts the results in a data warehouse.The data you will be working on is provided in the `filedata/raw_ulrs.csv`.The project is meant to be run as a `docker-compose` project. It runs a Python-based ETL service and a 'Data Warehouse' - PostgreSQL database. Please, create and setup this serivce.
+Your task will be to createa simple ETL solution that parses the URL and puts the results in a data warehouse. The data you will be working on is provided in the `filedata/raw_ulrs.csv`.The project is meant to be run as a `docker-compose` project. It runs a Python-based ETL service and a 'Data Warehouse' - PostgreSQL database. Please, create and setup this serivce.
 To do this,you will also need to set up a table `customer_visits`  in the Data Warehouse.You can do this inside the ETL service or anywhere else you feel is appropriate.If you decide to use any Python libraries beyond the standard library,please include them in a requirements.txt file.
 
 ## Requirements
 
-* Simple but scalable solution \
-* Detailed documentation/readme with a guide on how to run a solution \
-* Bonus points for unit tests and logging \
+* Simple but scalable solution 
+* Detailed documentation/readme with a guide on how to run a solution 
+* Bonus points for unit tests and logging 
 * Bonus points for “pythonic” coding style
 
 
@@ -39,15 +39,6 @@ To do this,you will also need to set up a table `customer_visits`  in the Data W
 
 
 # Solution
-
-
-## Info
-Due to company security (shorewall) I was not able to fully  test `docker-compose` file. 
-Please check configuration file and setup variables accordingly (see `/etl/conf/config.ini`).
-Additionally I added inside docker-compose file `network_mode: host` property to make it works
-no my linux machine.
-Below instructions assumes that there is no security challange when it comes to setup docker-compose.
-
 
 ## Run 
 1. Make sure `data` folder is owned by `4096` user.

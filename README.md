@@ -41,10 +41,11 @@ To do this,you will also need to set up a table `customer_visits`  in the Data W
 # Solution
 
 ## Run 
-1. Make sure `data` folder is owned by `4096` user.
-2. Run command: `docker-compose build`
-3. Run command: `docker-compose up`
-4. See logs or go to pgadmin service to check loaded data.
+1. Add & specify credentials in .env (based on env-template) and conf/config.ini file. 
+2. Make sure `data` folder is owned by `4096` user.
+3. Run command: `docker-compose build`
+4. Run command: `docker-compose up`
+5. See logs or go to pgadmin service to check loaded data.
 
 
 ## Structure
